@@ -1,0 +1,32 @@
+<div class="container mt-5 ">
+    <div class="row">
+    
+        <div class="col-8">
+    <h1 > About Us </h1>
+<br>
+    <p>After the fall of Wall Maria, they begin laying down supplies from Wall Rose's Trost District to Wall Maria's Shiganshina District in preparation to seal the breach and reclaim Wall Maria. This ultimate goal is finally reached two months after the crowning of Historia Reiss, though at the price of nearly all soldiers of the Survey Corps</p>
+</div>
+<div class="col-4 bg-rounded"> <img src="../../../assets/sq.png" width="50%"></div>
+
+</div>
+<br>
+<br>
+<br>
+<div class="container ">
+    <h2>Our Team</h2>
+    <mat-card class="mat-cardd">
+    <owl-carousel-o [options]="customOptions">
+          
+              <ng-template carouselSlide *ngFor="let slide of slidesStore" >
+              
+              <div>
+                <mat-card class="matcard"><img class=" cap" width="50%" [src]="slide.src"
+                  alt="Card image cap" ></mat-card>
+                  </div>
+              
+          </ng-template>
+          </owl-carousel-o>
+           </mat-card>
+    </div>
+    
+</div>

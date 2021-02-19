@@ -1,0 +1,112 @@
+<div class=row>
+<form class="frm container m-4 p-4 w-50 col-5">
+
+  <div>
+    <label>firstName</label><br>
+    <mat-form-field  appearance="outline">
+      <mat-label>fIrstName</mat-label>
+      <input matInput placeholder="pat@example.com" [formControl]="fIrstName" required>
+    <mat-error *ngIf="fIrstName.invalid && (fIrstName.dirty || fIrstName.touched)">{{getErrorMessage()}}</mat-error>
+      <mat-icon matSuffix></mat-icon>
+    </mat-form-field>
+  </div>
+  <div>
+    <label>lastname</label><br>
+    <mat-form-field appearance="outline">
+      <mat-label>lastname</mat-label>
+      <input matInput placeholder="pat@example.com" [formControl]="lastname" required>
+    <mat-error *ngIf="lastname.invalid && (lastname.dirty || lastname.touched)">{{getErrorMessage()}}</mat-error>
+      <mat-icon matSuffix></mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </div>
+  <div>
+    <label>Email</label><br>
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input matInput placeholder="pat@example.com" [formControl]="Email" required>
+    <mat-error *ngIf="Email.invalid && (Email.dirty || Email.touched)">{{getErrorMessage()}}</mat-error>
+      <mat-icon matSuffix></mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </div>
+  <div>
+    <label>Age</label><br>
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input type="number" matInput placeholder="pat@example.com" [formControl]="Age" required>
+    <mat-error *ngIf="Age.invalid && (Age.dirty || Age.touched)">{{getErrorMessage()}}</mat-error>
+      <mat-icon matSuffix></mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </div>
+  <div>
+    <label>nathinality</label><br>
+    <mat-form-field appearance="outline">
+      <mat-label>nathinality</mat-label>
+      <input matInput placeholder="pat@example.com" [formControl]="nathinality" required>
+    <mat-error *ngIf="nathinality.invalid && (nathinality.dirty || nathinality.touched)">{{getErrorMessage()}}</mat-error>
+      <mat-icon matSuffix></mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </div>
+ 
+
+<button class="w-100" type="submit"  (click)="signup()" mat-raised-button color="primary" >Add</button>
+
+   
+</form>
+<div class="col-6 m-4"> 
+
+<mat-accordion class="example-headers-align">
+  <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+      <mat-panel-description>
+        Type your name and age
+        <mat-icon>account_circle</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <mat-label>First name</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Age</mat-label>
+      <input matInput type="number" min="1">
+    </mat-form-field>
+    <mat-action-row>
+      <button mat-button color="primary" (click)="nextStep()">Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Destination
+      </mat-panel-title>
+      <mat-panel-description>
+        Type the country name
+        <mat-icon>map</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <mat-label>Country</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <mat-action-row>
+      <button mat-button color="warn" (click)="prevStep()">Previous</button>
+      <button mat-button color="primary" (click)="nextStep()">Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+
+</mat-accordion>
+</div>
+</div>

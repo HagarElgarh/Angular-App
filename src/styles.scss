@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+*{
+    font-family: 'Cairo', sans-serif;
+}
+
+html, body { height: 100%;  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;background-color: rgba(237, 241, 250, 0.548); }
+
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';

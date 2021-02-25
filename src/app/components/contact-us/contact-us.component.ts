@@ -83,7 +83,7 @@ export class ContactUsComponent implements OnInit {
     }
   
     console.log(this.list)
-    this.userSer.adduser(this.listadd)
+    // this.userSer.adduser(this.listadd)
     
   }
 

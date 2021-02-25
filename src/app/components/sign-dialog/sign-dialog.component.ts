@@ -33,27 +33,27 @@ export class SignDialogComponent implements OnInit {
   }
 
   openadmin(){
-    this.logser.signup(this.Email.value,this.Age.value)
-    .then(result=>
-      {
+    // this.logser.signup(this.Email.value,this.Age.value)
+    // .then(result=>
+      // {
         
         // this.errorMsg='';
-        console.log(this.Email.value)
-        console.log(this.Age.value)
+        // console.log(this.Email.value)
+        // console.log(this.Age.value)
         this.router.navigate(['/admin/admin']);
         this.dialogRef.close();
-        console.log(result)
+        // console.log(result)
         
-      })
-    .catch(err=>
+      // })
+    // .catch(err=>
       {
         // this.errorMsg=err.message
         this.dialogRef.close();
 
-      console.log(err)
+      // console.log(err)
       
       
-      })
+      // })
     // console.log(this.Email.value)
     // console.log(this.Age.value)
     // this.router.navigate(['/']);
@@ -64,4 +64,5 @@ export class SignDialogComponent implements OnInit {
 
 
 
+}
 }

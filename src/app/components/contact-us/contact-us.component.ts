@@ -70,12 +70,15 @@ export class ContactUsComponent implements OnInit {
   signup(){
     let datee:number =  Date.now()
     this.listadd={
-      Age:this.Age.value,
-      fIrstName:this.fIrstName.value,
-      lastname:this.lastname.value,
-      Email:this.Email.value,
-      nathinality:this.nathinality.value,
-      date:datee
+      // item:{
+      //   Age:this.Age.value
+      // }
+      // Age:this.Age.value,
+      // fIrstName:this.fIrstName.value,
+      // lastname:this.lastname.value,
+      // Email:this.Email.value,
+      // nathinality:this.nathinality.value,
+      // date:datee
 
     }
   
@@ -85,15 +88,15 @@ export class ContactUsComponent implements OnInit {
   }
 
   get(){
-    this.list.item={
-      Age:this.Age.value,
-      fIrstName:this.fIrstName.value,
-      lastname:this.lastname.value,
-      Email:this.Email.value,
-      nathinality:this.nathinality.value,
+    // this.list.item={
+    //   Age:this.Age.value,
+    //   fIrstName:this.fIrstName.value,
+    //   lastname:this.lastname.value,
+    //   Email:this.Email.value,
+    //   nathinality:this.nathinality.value,
 
-    }
-    console.log(this.list)
+    // }
+    // console.log(this.list)
 
     // console.log(this.email.value)
     // this.userSer.getallatours().subscribe(er => {

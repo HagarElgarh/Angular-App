@@ -26,13 +26,14 @@ this.iUsersRef.push(item);
 ;
 
 
-getallatours():Observable<Iuser[]>{
+getallatours(){
+// :Observable<Iuser[]>{
   
-return this.iUsersRef.snapshotChanges().pipe(
-  map(users => users.map (user => {
-    return {key: user.payload.key, ...user.payload.val()} as Iuser;
-  }))
-);
+// return this.iUsersRef.snapshotChanges().pipe(
+//   map(users => users.map (user => {
+//     return {key: user.payload.key, ...user.payload.val()} as Iuser;
+//   }))
+// );
 }
 
 }

@@ -1,5 +1,5 @@
 export interface Iuser {
-    item?:{
+    // item?:{
     id?:string;
     fIrstName?:String,
     lastname?:String,
@@ -7,5 +7,5 @@ export interface Iuser {
     Age?:number,
     nathinality?:string,
     date?:number
-    }
+    // }
 }

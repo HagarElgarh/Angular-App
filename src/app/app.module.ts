@@ -51,7 +51,7 @@ import { SignDialogComponent } from './components/sign-dialog/sign-dialog.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    // AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     FormsModule,
     ReactiveFormsModule,
